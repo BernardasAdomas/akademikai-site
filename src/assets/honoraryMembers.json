@@ -1,0 +1,88 @@
+[
+    {
+        "name": "Kristupas Čibiras",
+        "organization": "ASD ir Korp! Vytis",
+        "dateOfBirth": "1888 12 14",
+        "dateOfDeath": "1942 03 24",
+        "description": "Kunigas, Vilniaus krašto veikėjas lenkų okupacijos laikais. Lietuviškų švietimo įstaigų kūrėjas ir jų vadovas, „Ryto“ draugijos paskutinis pirmininkas. Pirmasis Vilniaus lietuvių skautų kapelionas nuo 1918 m. ASD ir Korp! Vytis garbės nariu pakeltas 1940 m.",
+        "imageUrl": "",
+        "links": [
+            {
+                "url": "https://lt.wikipedia.org/wiki/Kristupas_Čibiras",
+                "description": "lt.wikipedia.org"
+            }
+        ]
+    },
+    {
+        "name": "Ignas Končius",
+        "organization": "ASD ir Korp! Vytis",
+        "dateOfBirth": "1886 07 31",
+        "dateOfDeath": "1975 02 19",
+        "description": "Mokslininkas fizikas, Vytauto Didžiojo universiteto profesorius, Vilniaus universiteto pirmasis valdytojas (1939 m.), etnografas mėgėjas, ypač gerai pažinęs savo gimtąją Žemaitiją, vyresnysis skautininkas, rezistencijos veikėjas prieš abu Lietuvos okupantus. ASD ir Korp! Vytis garbės nariu pakeltas 1935 m.",
+        "imageUrl": "ignas_koncius.jpg",
+        "links": [
+            {
+                "url": "https://lt.wikipedia.org/wiki/Ignas_Končius",
+                "description": "lt.wikipedia.org"
+            },
+            {
+                "url": "https://www.rasyk.lt/rasytojai/ignas-koncius.html",
+                "description": "rasyk.lt"
+            },
+            {
+                "url": "https://straipsniai.lt",
+                "description": "straipsniai.lt"
+            }
+        ]
+    },
+    {
+        "name": "Algirdas Antanas Avižienis",
+        "organization": "ASD ir Korp! Vytis",
+        "dateOfBirth": "1932 07 08",
+        "dateOfDeath": "",
+        "description": "Korp! Vytis filisteris, informatikos mokslų daktaras, išradėjas. Senjoro pasižadėjimą davęs 1954 m. Urbanoje, ėjęs žurnalo \"Mūsų Vytis\" redaktoriaus, LSS Brolijos skautų vyčių skyriaus vedėjo, LSS Tarybos nario, ASS FSS valdybos pirmininko ir pirmojo atkurtos Lietuvos skautų sąjungos ASS pirmininko pareigas, pirmojo lietuvių Mokslo ir kūrybos simpoziumo organizatorius, pirmasis atkurtojo VDU Rektorius, kurio iniciatyva 1991 m. gegužės 31 d. VDU įregistruota Korp!Vytis, Česlovo Milošo gimtinės fondo direktorius, VDU garbės profesorius ir Prancūzijos Nacionalinio politechnikos instituto Tulūzoje garbės daktaras, Didžiojo Lietuvos kunigaikščio Gedimino III laipsnio ordino kavalierius. Korp!Vytis ir ASD garbės nariu pakeltas 2004 m. spalio 16 d.",
+        "imageUrl": "algirdas_antanas_avizienis.jpg",
+        "links": [
+            {
+                "url": "http://www.avizienis.info",
+                "description": "http://www.avizienis.info"
+            },
+            {
+                "url": "https://lt.wikipedia.org/wiki/Algirdas_Antanas_Avižienis",
+                "description": "lt.wikipedia.org"
+            }
+        ]
+    },
+    {
+        "name": "Sofija Kymantaitė-Čiurlionienė",
+        "organization": "ASD",
+        "dateOfBirth": "1886 06 13",
+        "dateOfDeath": "1958 12 01",
+        "description": "Lietuvos universiteto lektorė, rašytoja, skautė. ASD garbės nare pakelta 1935 m. Taip pat 1929 m. garbės nare pakvietė Korp! Filiae Lithuaniae (studenčių korporacija).",
+        "imageUrl": "sofija_kymantaite-ciurlioniene.jpg",
+        "links": [
+            {
+                "url": "https://lt.wikipedia.org/wiki/Sofija_Kymantaitė-Čiurlionienė",
+                "description": "lt.wikipedia.org"
+            },
+            {
+                "url": "https://www.rasyk.lt/rasytojai/sofija-kymantaite-ciurlioniene.html",
+                "description": "rasyk.lt"
+            }
+        ]
+    },
+    {
+        "name": "Jurgis Alekna",
+        "organization": "Korp! Vytis",
+        "dateOfBirth": "1873 02 16",
+        "dateOfDeath": "1952 10 17",
+        "description": "Medicinos daktaras, žymus lietuviškosios skautybės ugdytojas ir rėmėjas, pirmasis Lietuvių skautų sąjungos šefas, vėliau šefo pavaduotojas, vyresnysis skautininkas, Lietuvos Raudonojo kryžiaus pirmininkas.",
+        "imageUrl": "jurgis_alekna.jpg",
+        "links": [
+            {
+                "url": "https://www.anykstenai.lt/asmenys/asm.php?id=954",
+                "description": "www.anykstenai.lt"
+            }
+        ]
+    }
+]
