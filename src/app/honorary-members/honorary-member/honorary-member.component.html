@@ -1,0 +1,12 @@
+<div>
+    <h2>{{ member.name }}</h2>
+    <img src="../../../assets/{{ member.imageUrl }}" alt="{{ member.name }}" />
+    <p>{{ member.organization }}</p>
+    <p>{{ member.description }}</p>
+    <p>{{ member.dateOfBirth }}</p>
+    <p>{{ member.dateOfDeath }}</p>
+    <div *ngFor="let link of member.links">
+        <a *ngIf="link.type=='web'" href="{{ link.url }}">{{ link.description }}</a>
+        <a *ngIf="link.type=='file'" href="../../../assets/{{link.url }}">{{ link.description }}</a>
+    </div>
+</div>

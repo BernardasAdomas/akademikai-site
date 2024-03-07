@@ -13,50 +13,17 @@
 
 <section id="BOTH">
     <h2>KORP! VYTIS IR ASD GARBĖS NARIAI</h2>
-    <div *ngFor="let member of bothOrganizationMembers">
-        <h2>{{ member.name }}</h2>
-        <img src="../../../assets/{{ member.imageUrl }}" alt="{{ member.name }}" />
-        <p>{{ member.organization }}</p>
-        <p>{{ member.description }}</p>
-        <p>{{ member.dateOfBirth }}</p>
-        <p>{{ member.dateOfDeath }}</p>
-        <div *ngFor="let link of member.links">
-            <a *ngIf="link.type=='web'" href="{{ link.url }}">{{ link.description }}</a>
-            <a *ngIf="link.type=='file'" href="../../../assets/{{link.url }}">{{ link.description }}</a>
-        </div>
-    </div>
+    <app-honorary-member *ngFor="let member of bothOrganizationMembers" [member]="member"></app-honorary-member>
 </section>
 
 <section id="ASD">
     <h2>ASD GARBĖS NARIAI</h2>
-    <div *ngFor="let member of organizationASDMembers">
-        <h2>{{ member.name }}</h2>
-        <img src="../../../assets/{{ member.imageUrl }}" alt="{{ member.name }}" />
-        <p>{{ member.organization }}</p>
-        <p>{{ member.description }}</p>
-        <p>{{ member.dateOfBirth }}</p>
-        <p>{{ member.dateOfDeath }}</p>
-        <div *ngFor="let link of member.links">
-            <a *ngIf="link.type=='web'" href="{{ link.url }}">{{ link.description }}</a>
-            <a *ngIf="link.type=='file'" href="../../../assets/{{link.url }}">{{ link.description }}</a>
-        </div>
-    </div>
+    <app-honorary-member *ngFor="let member of organizationASDMembers" [member]="member"></app-honorary-member>
 </section>
 
 <section id="VYTIS">
     <h2>KORP! VYTIS GARBĖS NARIAI</h2>
-    <div *ngFor="let member of organizationKorpVytisembers">
-        <h2>{{ member.name }}</h2>
-        <img src="../../../assets/{{ member.imageUrl }}" alt="{{ member.name }}" />
-        <p>{{ member.organization }}</p>
-        <p>{{ member.description }}</p>
-        <p>{{ member.dateOfBirth }}</p>
-        <p>{{ member.dateOfDeath }}</p>
-        <div *ngFor="let link of member.links">
-            <a *ngIf="link.type=='web'" href="{{ link.url }}">{{ link.description }}</a>
-            <a *ngIf="link.type=='file'" href="../../../assets/{{link.url }}">{{ link.description }}</a>
-        </div>
-    </div>
+    <app-honorary-member *ngFor="let member of organizationKorpVytisMembers" [member]="member"></app-honorary-member>
 </section>
 
 <p><a [routerLink]="[]" fragment="START">Į viršų</a></p>

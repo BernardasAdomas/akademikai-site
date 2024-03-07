@@ -4,11 +4,12 @@ import { Subscription } from 'rxjs';
 import { IHonoraryMember } from '../honorary-member';
 import { HonoraryMemberService } from '../honorary-member.service';
 import { RouterModule } from '@angular/router';
+import { HonoraryMemberComponent } from '../honorary-member/honorary-member.component';
 
 @Component({
   selector: 'app-honorary-member-list',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, HonoraryMemberComponent],
   templateUrl: './honorary-member-list.component.html',
   styleUrl: './honorary-member-list.component.css'
 })
@@ -21,7 +22,7 @@ export class HonoraryMemberListComponent implements OnInit, OnDestroy{
   honoraryMembers: IHonoraryMember[] = [];
   bothOrganizationMembers: IHonoraryMember[] = [];
   organizationASDMembers: IHonoraryMember[] = [];
-  organizationKorpVytisembers: IHonoraryMember[] = [];
+  organizationKorpVytisMembers: IHonoraryMember[] = [];
 
   ngOnInit() {
     this.sub = this.honoraryMemberService.getHonoraryMembers().subscribe({
@@ -29,7 +30,7 @@ export class HonoraryMemberListComponent implements OnInit, OnDestroy{
         this.honoraryMembers = honoraryMembers;
         this.bothOrganizationMembers = honoraryMembers.filter(member => member.organization === 'ASD ir Korp! Vytis');
         this.organizationASDMembers = honoraryMembers.filter(member => member.organization === 'ASD');
-        this.organizationKorpVytisembers = honoraryMembers.filter(member => member.organization === 'Korp! Vytis');
+        this.organizationKorpVytisMembers = honoraryMembers.filter(member => member.organization === 'Korp! Vytis');
       },
       error: err => this.errorMessage = err
     });
