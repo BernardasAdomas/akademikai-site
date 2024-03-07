@@ -21,7 +21,8 @@
         <p>{{ member.dateOfBirth }}</p>
         <p>{{ member.dateOfDeath }}</p>
         <div *ngFor="let link of member.links">
-            <a href="{{ link.url }}">{{ link.description }}</a>
+            <a *ngIf="link.type=='web'" href="{{ link.url }}">{{ link.description }}</a>
+            <a *ngIf="link.type=='file'" href="../../../assets/{{link.url }}">{{ link.description }}</a>
         </div>
     </div>
 </section>
@@ -36,7 +37,8 @@
         <p>{{ member.dateOfBirth }}</p>
         <p>{{ member.dateOfDeath }}</p>
         <div *ngFor="let link of member.links">
-            <a href="{{ link.url }}">{{ link.description }}</a>
+            <a *ngIf="link.type=='web'" href="{{ link.url }}">{{ link.description }}</a>
+            <a *ngIf="link.type=='file'" href="../../../assets/{{link.url }}">{{ link.description }}</a>
         </div>
     </div>
 </section>
@@ -51,7 +53,8 @@
         <p>{{ member.dateOfBirth }}</p>
         <p>{{ member.dateOfDeath }}</p>
         <div *ngFor="let link of member.links">
-            <a href="{{ link.url }}">{{ link.description }}</a>
+            <a *ngIf="link.type=='web'" href="{{ link.url }}">{{ link.description }}</a>
+            <a *ngIf="link.type=='file'" href="../../../assets/{{link.url }}">{{ link.description }}</a>
         </div>
     </div>
 </section>
