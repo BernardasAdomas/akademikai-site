@@ -8,7 +8,7 @@ import { Observable, catchError, tap, throwError } from 'rxjs';
 })
 export class HonoraryMemberService {
 
-  private honoraryMemberUrl = 'assets/honoraryMembers.json';
+  private honoraryMemberUrl = 'assets/api/honoraryMembers.json';
 
   constructor(private http: HttpClient) { }
 
