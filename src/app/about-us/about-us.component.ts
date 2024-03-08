@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-about-us',
   standalone: true,
-  imports: [],
+  imports: [MatExpansionModule],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.css'
 })
