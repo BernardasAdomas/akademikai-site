@@ -1,20 +1,5 @@
 [
     {
-        "name": "Kristupas Čibiras",
-        "organization": "ASD ir Korp! Vytis",
-        "dateOfBirth": "1888 12 14",
-        "dateOfDeath": "1942 03 24",
-        "description": "Kunigas, Vilniaus krašto veikėjas lenkų okupacijos laikais. Lietuviškų švietimo įstaigų kūrėjas ir jų vadovas, „Ryto“ draugijos paskutinis pirmininkas. Pirmasis Vilniaus lietuvių skautų kapelionas nuo 1918 m. ASD ir Korp! Vytis garbės nariu pakeltas 1940 m.",
-        "imageUrl": "",
-        "links": [
-            {
-                "url": "https://lt.wikipedia.org/wiki/Kristupas_Čibiras",
-                "description": "lt.wikipedia.org",
-                "type": "web"
-            }
-        ]
-    },
-    {
         "name": "Ignas Končius",
         "organization": "ASD ir Korp! Vytis",
         "dateOfBirth": "1886 07 31",

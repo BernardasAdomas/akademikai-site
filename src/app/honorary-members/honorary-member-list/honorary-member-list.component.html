@@ -2,10 +2,10 @@
     <h1>Garbės nariai</h1>
 </section>
 
-<p><a [routerLink]="[]" fragment="BOTH">Bendri Korp! Vytis ir ASD garbės nariai</a></p>
+<!-- <p><a [routerLink]="[]" fragment="BOTH">Bendri Korp! Vytis ir ASD garbės nariai</a></p>
 <p><a [routerLink]="[]" fragment="ASD">Tik ASD garbės nariai</a></p>
 <p><a [routerLink]="[]" fragment="VYTIS">Tik Korp! Vytis garbės nariai</a></p>
-<p>Apie tavo mylimiausią garbės narį parašyta per mažai? Trūksta nuotraukos? Turi gerą nuorodą? Rašyk <a href="mailto:webmaster@akademikai.lt">webmaster&#64;akademikai.lt</a>!</p>
+<p>Apie tavo mylimiausią garbės narį parašyta per mažai? Trūksta nuotraukos? Turi gerą nuorodą? Rašyk <a href="mailto:webmaster@akademikai.lt">webmaster&#64;akademikai.lt</a>!</p> -->
 
 <div *ngIf='errorMessage'>
   Error: {{ errorMessage }}
@@ -26,4 +26,4 @@
     <app-honorary-member *ngFor="let member of organizationKorpVytisMembers" [member]="member"></app-honorary-member>
 </section>
 
-<p><a [routerLink]="[]" fragment="START">Į viršų</a></p>
+<!-- <p><a [routerLink]="[]" fragment="START">Į viršų</a></p> -->
