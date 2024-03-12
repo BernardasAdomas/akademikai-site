@@ -1,0 +1,30 @@
+<mat-toolbar class="navbar" color="primary">
+    <div>Akademikai</div>
+    <div>
+        <button mat-button [matMenuTriggerFor]="ApieMenu">Apie</button>
+        <button mat-button [matMenuTriggerFor]="NaujienosMenu">Naujienos</button>
+        <button mat-button [routerLink]="['/apie-mus']">Nuorodos</button>
+        <button mat-button [matMenuTriggerFor]="LeidiniaiMenu">Leidiniai</button>
+        <button mat-button [routerLink]="['/apie-mus']">Nariams</button>
+        <button mat-button [routerLink]="['/apie-mus']">Kontaktai</button>
+    </div>
+</mat-toolbar>
+
+<mat-menu #ApieMenu="matMenu">
+    <button mat-menu-item [routerLink]="['/apie-mus']">Apie mus</button>
+    <button mat-menu-item [routerLink]="['/apie-mus/veiklos-gaires']">Veiklos gaires</button>
+    <button mat-menu-item [routerLink]="['/apie-mus/garbes-nariai']">Garbės nariai</button>
+    <button mat-menu-item [routerLink]="['/apie-mus/zenklai']">Ženklai</button>
+    <button mat-menu-item [routerLink]="['/apie-mus/vyduno-fondas']">Vydūno fondas</button>
+</mat-menu>
+
+<mat-menu #NaujienosMenu="matMenu">
+    <button mat-menu-item [routerLink]="['/apie-mus']">Naujienos</button>
+    <button mat-menu-item [routerLink]="['/apie-mus']">Parama Studentų Skautų Organizacijai</button>
+    <button mat-menu-item [routerLink]="['/apie-mus']">Kalendorius</button>
+</mat-menu>
+
+<mat-menu #LeidiniaiMenu="matMenu">
+    <button mat-menu-item [routerLink]="['/apie-mus']">Mūsų vytis</button>
+    <button mat-menu-item [routerLink]="['/apie-mus']">Ad meliorem!</button>
+</mat-menu>

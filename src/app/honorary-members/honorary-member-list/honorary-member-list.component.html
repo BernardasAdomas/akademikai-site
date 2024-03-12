@@ -1,0 +1,29 @@
+<section id="START">
+    <h1>Garbės nariai</h1>
+</section>
+
+<!-- <p><a [routerLink]="[]" fragment="BOTH">Bendri Korp! Vytis ir ASD garbės nariai</a></p>
+<p><a [routerLink]="[]" fragment="ASD">Tik ASD garbės nariai</a></p>
+<p><a [routerLink]="[]" fragment="VYTIS">Tik Korp! Vytis garbės nariai</a></p>
+<p>Apie tavo mylimiausią garbės narį parašyta per mažai? Trūksta nuotraukos? Turi gerą nuorodą? Rašyk <a href="mailto:webmaster@akademikai.lt">webmaster&#64;akademikai.lt</a>!</p> -->
+
+<div *ngIf='errorMessage'>
+  Error: {{ errorMessage }}
+</div>
+
+<section id="BOTH">
+    <h2>KORP! VYTIS IR ASD GARBĖS NARIAI</h2>
+    <app-honorary-member *ngFor="let member of bothOrganizationMembers" [member]="member"></app-honorary-member>
+</section>
+
+<section id="ASD">
+    <h2>ASD GARBĖS NARIAI</h2>
+    <app-honorary-member *ngFor="let member of organizationASDMembers" [member]="member"></app-honorary-member>
+</section>
+
+<section id="VYTIS">
+    <h2>KORP! VYTIS GARBĖS NARIAI</h2>
+    <app-honorary-member *ngFor="let member of organizationKorpVytisMembers" [member]="member"></app-honorary-member>
+</section>
+
+<!-- <p><a [routerLink]="[]" fragment="START">Į viršų</a></p> -->
