@@ -4,6 +4,7 @@ import { GuidelineListComponent } from './guideline-list/guideline-list.componen
 import { HonoraryMemberListComponent } from './honorary-members/honorary-member-list/honorary-member-list.component';
 import { FundComponent } from './fund/fund.component';
 import { SymbolListComponent } from './symbol-list/symbol-list.component';
+import { TitlePageComponent } from './title-page/title-page.component';
 
 export const routes: Routes = [
     { path: 'apie-mus', component: AboutUsComponent, pathMatch: 'full' },
@@ -11,6 +12,6 @@ export const routes: Routes = [
     { path: 'apie-mus/garbes-nariai', component: HonoraryMemberListComponent, pathMatch: 'full' },
     { path: 'apie-mus/zenklai', component: SymbolListComponent, pathMatch: 'full' },
     { path: 'apie-mus/vyduno-fondas', component: FundComponent, pathMatch: 'full' },
-    { path: '', redirectTo: 'apie-mus', pathMatch: 'full' },
-    { path: '**', redirectTo: 'apie-mus', pathMatch: 'full' }
+    { path: '', component: TitlePageComponent, pathMatch: 'full' },
+    { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
