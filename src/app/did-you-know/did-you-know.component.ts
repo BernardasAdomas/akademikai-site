@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { RandomFactService } from './random-fact.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-did-you-know',
@@ -9,6 +11,22 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './did-you-know.component.css'
 })
 export class DidYouKnowComponent {
-  randomFact: string = 'Vienas dramblys sveria mažiau nei mėlynojo banginio liežuvis.';
+
+  constructor(private randomFactService: RandomFactService) { }
+
+  sub!: Subscription;
+  errorMessage: string = '';
+  randomFact: string = 'asd';
+
+  ngOnInit() {
+    this.sub = this.randomFactService.getRandomFact().subscribe({
+      next: fact => this.randomFact = fact,
+      error: err => this.errorMessage = err
+    });
+  }
+
+  ngOnDestroy() {
+    this.sub.unsubscribe();
+  }
 
 }
