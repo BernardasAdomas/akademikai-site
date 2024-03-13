@@ -4,11 +4,12 @@ import { DidYouKnowComponent } from '../did-you-know/did-you-know.component';
 import { SurveyComponent } from '../survey/survey.component';
 import { NewsListComponent } from '../news-list/news-list.component';
 import { IncomeTaxComponent } from '../income-tax/income-tax.component';
+import { ContactsComponent } from '../contacts/contacts.component';
 
 @Component({
   selector: 'app-title-page',
   standalone: true,
-  imports: [CalendarComponent, DidYouKnowComponent, SurveyComponent, NewsListComponent, IncomeTaxComponent],
+  imports: [CalendarComponent, DidYouKnowComponent, SurveyComponent, NewsListComponent, IncomeTaxComponent, ContactsComponent],
   templateUrl: './title-page.component.html',
   styleUrl: './title-page.component.css'
 })
