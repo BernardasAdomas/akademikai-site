@@ -5,11 +5,12 @@ import { SurveyComponent } from '../survey/survey.component';
 import { NewsListComponent } from '../news-list/news-list.component';
 import { IncomeTaxComponent } from '../income-tax/income-tax.component';
 import { ContactsComponent } from '../contacts/contacts.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-title-page',
   standalone: true,
-  imports: [CalendarComponent, DidYouKnowComponent, SurveyComponent, NewsListComponent, IncomeTaxComponent, ContactsComponent],
+  imports: [CalendarComponent, DidYouKnowComponent, SurveyComponent, NewsListComponent, IncomeTaxComponent, ContactsComponent,MatGridListModule],
   templateUrl: './title-page.component.html',
   styleUrl: './title-page.component.css'
 })

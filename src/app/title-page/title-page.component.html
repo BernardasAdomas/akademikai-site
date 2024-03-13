@@ -1,8 +1,20 @@
-<p>title-page works!</p>
-
-<app-calendar></app-calendar>
-<app-did-you-know></app-did-you-know>
-<app-survey></app-survey>
-<app-news-list></app-news-list>
-<app-income-tax></app-income-tax>
-<app-contacts></app-contacts>
+<mat-grid-list cols="5">
+    <mat-grid-tile>
+        <app-calendar></app-calendar>
+    </mat-grid-tile>
+    <mat-grid-tile [rowspan]="4" [colspan]="3">
+        <app-news-list></app-news-list>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-did-you-know></app-did-you-know>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-income-tax></app-income-tax>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="2">
+        <app-survey></app-survey>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-contacts></app-contacts>
+    </mat-grid-tile>
+</mat-grid-list>
