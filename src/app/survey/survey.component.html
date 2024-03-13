@@ -1,0 +1,21 @@
+<p>survey works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Apklausa</mat-card-title>
+        <mat-card-subtitle>Užbaikite mėgstamos akademikų dainos žodžius:</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-radio-group class="radio-group" [(ngModel)]="songEnding">
+            @for (ending of songEndings; track ending){
+            <mat-radio-button class="radio-button" [value]="ending">
+                {{ending}}
+            </mat-radio-button>
+            }
+        </mat-radio-group>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="songEnding === '' ? openDialogue() : submitSurvey()">
+            Pateikti
+        </button>
+    </mat-card-actions>
+</mat-card>
