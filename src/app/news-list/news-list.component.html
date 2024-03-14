@@ -17,5 +17,5 @@
         }
     </mat-grid-list>
 
-    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"> </mat-paginator>
+    <mat-paginator (page)="handlePageEvent($event)" [length]="articleCount" [pageSize]="pageSize" [showFirstLastButtons]="false" [hidePageSize]="true"> </mat-paginator>
 </div>

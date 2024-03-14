@@ -16,7 +16,7 @@ export class NewsArticleService {
     return this.http.get<NewsArticle[]>(this.newsArticleUrl)
       .pipe(
         map(data => data.slice(rangeSkip, rangeSkip + rangeTake)),
-        tap(data => console.log('All: ', JSON.stringify(data))),
+        // tap(data => console.log('All: ', JSON.stringify(data))),
         catchError(this.handleError)
       );
   }

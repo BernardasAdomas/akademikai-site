@@ -21,17 +21,10 @@ export class NewsListComponent {
   sub!: Subscription;
   errorMessage: string = '';
   newsArticles: NewsArticle[] = [];
+  articleCount: number = 20; //TODO - get this from the service
+  pageSize: number = 5;
   rangeSkip: number = 0;
   rangeTake: number = 5;
-
-
-  // newsArticles: NewsArticle[] = [
-  //   { date: new Date(2019, 3, 1), title: 'Korporacijų sąskrydis - Kauno kultūrinis tranzitas: nuo prieškarinio iki šiuolaikinio', preview: 'Brangūs korporantai, norime Jus pakviesti į  Korporacijų sąskrydį, kuris vyks kovo 30 d. KTU Santakos slėnio konferencijų salėje, Kaune.', id: 1 },
-  //   { date: new Date(2019, 3, 1), title: 'Korporacijų sąskrydis - Kauno kultūrinis tranzitas: nuo prieškarinio iki šiuolaikinio', preview: 'Brangūs korporantai, norime Jus pakviesti į  Korporacijų sąskrydį, kuris vyks kovo 30 d. KTU Santakos slėnio konferencijų salėje, Kaune.', id: 1 },
-  //   { date: new Date(2019, 3, 1), title: 'Korporacijų sąskrydis - Kauno kultūrinis tranzitas: nuo prieškarinio iki šiuolaikinio', preview: 'Brangūs korporantai, norime Jus pakviesti į  Korporacijų sąskrydį, kuris vyks kovo 30 d. KTU Santakos slėnio konferencijų salėje, Kaune.', id: 1 },
-  //   { date: new Date(2019, 3, 1), title: 'Korporacijų sąskrydis - Kauno kultūrinis tranzitas: nuo prieškarinio iki šiuolaikinio', preview: 'Brangūs korporantai, norime Jus pakviesti į  Korporacijų sąskrydį, kuris vyks kovo 30 d. KTU Santakos slėnio konferencijų salėje, Kaune.', id: 1 },
-  //   { date: new Date(2019, 3, 1), title: 'Korporacijų sąskrydis - Kauno kultūrinis tranzitas: nuo prieškarinio iki šiuolaikinio', preview: 'Brangūs korporantai, norime Jus pakviesti į  Korporacijų sąskrydį, kuris vyks kovo 30 d. KTU Santakos slėnio konferencijų salėje, Kaune.', id: 1 }
-  // ];
 
   ngOnInit() {
     this.sub = this.newsArticleService.getNewsArticles(this.rangeSkip, this.rangeTake).subscribe({
@@ -44,5 +37,16 @@ export class NewsListComponent {
 
   ngOnDestroy() {
     this.sub.unsubscribe();
+  }
+
+  handlePageEvent(event: PageEvent) {
+    this.rangeSkip = event.pageIndex * event.pageSize;
+    this.rangeTake = event.pageSize;
+    this.sub = this.newsArticleService.getNewsArticles(this.rangeSkip, this.rangeTake).subscribe({
+      next: newsArticles => {
+        this.newsArticles = newsArticles;
+      },
+      error: err => this.errorMessage = err
+    });
   }
 }
