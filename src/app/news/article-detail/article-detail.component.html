@@ -1,0 +1,10 @@
+<h1 style="font-weight: bold;">Naujienos</h1>
+<p>{{article?.author}}</p>
+<p style="text-align: right">{{article?.datePublished}}</p>
+<p style="font-weight: bold;">{{article?.title}}</p>
+<p>{{article?.content}}</p>
+
+<div *ngIf='errorMessage'
+     class='alert alert-danger'>
+  Error: {{ errorMessage }}
+</div>

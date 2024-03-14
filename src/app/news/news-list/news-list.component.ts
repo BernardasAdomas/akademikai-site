@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RouterModule } from '@angular/router';
 import { PageEvent, MatPaginatorModule } from '@angular/material/paginator';
-import { NewsArticleService } from './news-article.service';
-import { NewsArticle } from './news-article';
+import { NewsArticleService } from '../news-article.service';
+import { NewsArticle } from '../news-article';
 import { Subscription } from 'rxjs';
 
 @Component({
