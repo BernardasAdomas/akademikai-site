@@ -1,5 +1,7 @@
 <mat-toolbar class="navbar" color="primary">
-    <div>Akademikai</div>
+    <div>
+        <button mat-button [routerLink]="['']" style="font-size: large;">Akademikai</button>
+    </div>
     <div>
         <button mat-button [matMenuTriggerFor]="ApieMenu">Apie</button>
         <button mat-button [matMenuTriggerFor]="NaujienosMenu">Naujienos</button>

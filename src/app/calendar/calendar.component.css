@@ -1,0 +1,7 @@
+.inline-calendar-card {
+    width: 200px;
+}
+
+::ng-deep .mat-calendar .mat-calendar-controls{
+  display: none;
+}
