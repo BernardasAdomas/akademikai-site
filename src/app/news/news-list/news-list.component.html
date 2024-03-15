@@ -1,0 +1,21 @@
+<div class="news-container"> 
+    <h2>Naujienos</h2>
+    <mat-grid-list cols="4" class="article-list">
+        @for(article of newsArticles; track article){
+            <mat-grid-tile [colspan]="1">{{article.datePublished | date}}</mat-grid-tile>
+            <mat-grid-tile [colspan]="3">
+                <div>
+                    <h2>
+                        {{article.title}}
+                    </h2>
+                    <p>
+                        {{article.preview}}
+                    </p>
+                    <a [routerLink]="['/naujienos', article.id]">plačiau</a>
+                </div>
+            </mat-grid-tile>
+        }
+    </mat-grid-list>
+
+    <mat-paginator (page)="handlePageEvent($event)" [length]="articleCount" [pageSize]="pageSize" [showFirstLastButtons]="false" [hidePageSize]="true"> </mat-paginator>
+</div>
