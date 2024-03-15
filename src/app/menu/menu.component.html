@@ -5,10 +5,11 @@
     <div>
         <button mat-button [matMenuTriggerFor]="ApieMenu">Apie</button>
         <button mat-button [matMenuTriggerFor]="NaujienosMenu">Naujienos</button>
-        <button mat-button [routerLink]="['/apie-mus']">Nuorodos</button>
+        <button mat-button [routerLink]="['/nuorodos']">Nuorodos</button>
         <button mat-button [matMenuTriggerFor]="LeidiniaiMenu">Leidiniai</button>
-        <button mat-button [routerLink]="['/apie-mus']">Nariams</button>
-        <button mat-button [routerLink]="['/apie-mus']">Kontaktai</button>
+        <!-- <button mat-button [routerLink]="['/apie-mus']">Nariams</button> -->
+        <button mat-button [routerLink]="['/kontaktai']">Kontaktai</button>
+        <button mat-button [routerLink]="['/skautiskos-vietos']">Vietos</button>
     </div>
 </mat-toolbar>
 
@@ -27,6 +28,6 @@
 </mat-menu>
 
 <mat-menu #LeidiniaiMenu="matMenu">
-    <button mat-menu-item [routerLink]="['/apie-mus']">Mūsų vytis</button>
-    <button mat-menu-item [routerLink]="['/apie-mus']">Ad meliorem!</button>
+    <button mat-menu-item [routerLink]="['leidiniai/musu-vytis']">Mūsų vytis</button>
+    <button mat-menu-item [routerLink]="['leidiniai/ad-meliorem']">Ad meliorem!</button>
 </mat-menu>

@@ -1,4 +1,4 @@
-import { ILink } from "./honorary-member-list/link";
+import { ILink } from "../shared/link";
 
 export interface IHonoraryMember {
     id: number;

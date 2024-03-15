@@ -8,6 +8,11 @@ import { TitlePageComponent } from './title-page/title-page.component';
 import { NewsListComponent } from './news/news-list/news-list.component';
 import { DonationsComponent } from './donations/donations.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { LinksListComponent } from './links/links-list/links-list.component';
+import { AdMelioremComponent } from './ad-meliorem/ad-meliorem.component';
+import { OurVytisComponent } from './our-vytis/our-vytis.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { PlaceListComponent } from './places/place-list/place-list.component';
 
 export const routes: Routes = [
     { path: 'apie-mus', component: AboutUsComponent, pathMatch: 'full' },
@@ -21,6 +26,11 @@ export const routes: Routes = [
     },
     { path: 'parama', component: DonationsComponent, pathMatch: 'full' },
     { path: 'kalendorius', component: CalendarComponent, pathMatch: 'full' },
+    { path: 'nuorodos', component: LinksListComponent, pathMatch: 'full'},
+    { path: 'leidiniai/ad-meliorem', component: AdMelioremComponent, pathMatch: 'full'},
+    { path: 'leidiniai/musu-vytis', component: OurVytisComponent, pathMatch: 'full'},
+    { path: 'kontaktai', component: ContactsComponent, pathMatch: 'full'},
+    { path: 'skautiskos-vietos', component: PlaceListComponent, pathMatch: 'full'},
     { path: '', component: TitlePageComponent, pathMatch: 'full' },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
