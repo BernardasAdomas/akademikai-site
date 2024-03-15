@@ -10,6 +10,7 @@ import { DonationsComponent } from './donations/donations.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { LinksListComponent } from './links/links-list/links-list.component';
 import { AdMelioremComponent } from './ad-meliorem/ad-meliorem.component';
+import { OurVytisComponent } from './our-vytis/our-vytis.component';
 
 export const routes: Routes = [
     { path: 'apie-mus', component: AboutUsComponent, pathMatch: 'full' },
@@ -25,6 +26,7 @@ export const routes: Routes = [
     { path: 'kalendorius', component: CalendarComponent, pathMatch: 'full' },
     { path: 'nuorodos', component: LinksListComponent, pathMatch: 'full'},
     { path: 'leidiniai/ad-meliorem', component: AdMelioremComponent, pathMatch: 'full'},
+    { path: 'leidiniai/musu-vytis', component: OurVytisComponent, pathMatch: 'full'},
     { path: '', component: TitlePageComponent, pathMatch: 'full' },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
