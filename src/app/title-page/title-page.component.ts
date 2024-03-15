@@ -7,11 +7,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { IncomeTaxComponent } from '../income-tax/income-tax.component';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-title-page',
   standalone: true,
-  imports: [MatDatepickerModule, MatNativeDateModule, DidYouKnowComponent, SurveyComponent, NewsListComponent, IncomeTaxComponent, ContactsComponent,MatGridListModule],
+  imports: [MatCardModule, MatDatepickerModule, MatNativeDateModule, DidYouKnowComponent, SurveyComponent, NewsListComponent, IncomeTaxComponent, ContactsComponent,MatGridListModule],
   templateUrl: './title-page.component.html',
   styleUrl: './title-page.component.css'
 })

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { RouterModule } from '@angular/router';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-contacts',
   standalone: true,
-  imports: [MatCardModule, RouterModule],
+  imports: [MatCardModule, MatGridListModule],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.css'
 })
