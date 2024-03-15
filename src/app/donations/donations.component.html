@@ -1,0 +1,84 @@
+<h1>Parama Studentų Skautų Organizacijai</h1>
+<h2>GALIMYBĖ PADĖTI</h2>
+<p>
+    2004 m. įsigaliojęs LR gyventojų pajamų mokesčio įstatymas suteikė teisę dalimi išskaičiuoto ir sumokėto pajamų
+    mokesčio (iki 2%) paremti pasirinktą ne pelno siekiančią organizaciją. Tai paramos teikimo būdas, nereikalaujantis
+    iš Jūsų jokių papildomų materialinių išlaidų. Jūs turite teisę mokesčių administratoriui nurodyti, kam pervesti
+    pajamų mokesčio dalį ir tokiu būdu paremti jūsų manymu, svarbią veiklą vykdančią organizaciją.
+</p>
+
+<h2>Prašymą galite pateikti iki gegužės 1 d. šiais būdais:</h2>
+<ul>
+    <li>
+        Užpildydami deklaraciją elektroniniu būdu
+    </li>
+    <li>
+        Tiesiogiai pristatydami į vietos mokesčių inspekciją
+    </li>
+</ul>
+
+<h2>Deklaracijos pildymas elektroniniu būdu</h2>
+
+<ol>
+    <li>
+        <p>Prisijunkite prie Elektroninio Deklaravimo sistemos (EDS) tinklapio <a
+                [href]="declarationUrl">https://deklaravimas.vmi.lt/</a> naudodamiesi savo banko elektroninės
+            bankininkystės prisijungimu arba el. parašu.</p>
+    </li>
+    <li>
+        <p>
+            Elektroninio deklaravimo sistemos puslapyje viršuje esančiame meniu spauskite nuorodą “Deklaravimas”,
+            kairėje juostoje pasirinkite “Pildyti formą” ir atsidariusiame lange pasirinkite “Prašymas skirti paramą”.
+        </p>
+        <img [src]="requestImageUrl" alt="How to navigate to the request">
+    </li>
+    <li>
+        <p>
+            Prašymo pervesti pajamų mokesčio dalį Studentų skautų organizacijai FR0512 v.3 formą galite užpildyti
+            tiesiogiai portale arba parsisiuntę į savo kompiuterį.
+        </p>
+        <p>
+            Atsidariusiame lange pasirinkite pažymėtą įkoną Pildyti formą tiesiogiai portale.
+        </p>
+        <img [src]="formImageUrl" alt="How to fill out the form">
+    </li>
+</ol>
+
+<p>Užpildykite formą pagal žemiau pateiktą lentelę:</p>
+
+<table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="fields">
+        <th mat-header-cell *matHeaderCellDef>Laukelis</th>
+        <td mat-cell *matCellDef="let form">{{form.fields}}</td>
+    </ng-container>
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Laukelio pavadinimas</th>
+        <td mat-cell *matCellDef="let form">{{form.name}}</td>
+    </ng-container>
+    <ng-container matColumnDef="additionalInfo">
+        <th mat-header-cell *matHeaderCellDef>Pildomi duomenys</th>
+        <td mat-cell *matCellDef="let form">{{form.additionalInfo}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+
+<h2>Tiesioginis deklaracijos pristatymas</h2>
+<p>
+    Negalintys pasinaudoti elektronine deklaracijos pildymo galimybe, gali parsisiųsti formą <a [href]="formUrl">FR0512 v.3</a>, ją užpildyti,
+    pasirašyti ir pristatyti savo apskrities valstybinei mokesčių inspekcijai. Formos užpildymo ir pateikimo taisyklės
+    aprašytos faile <a [href]="howToFillOutFormUrl">IN0512.pdf</a>.
+</p>
+
+<p>Informacija apie paramos teikėją bus konfidenciali.</p>
+<p>Daugiau informacijos apie deklaravimą galite rasti interneto svetainėse <a [href]="declarationUrl">http://deklaravimas.vmi.lt/</a> ir <a [href]="helpUrl">http://pagalba.vmi.lt/</a>.</p>
+<p>Paremdami Studentų skautų organizaciją, Jūs:</p>
+<ul>
+    <li>Skatinsite aktyvų skautų studentų judėjimą Vilniaus, Kauno ir Klaipėdos skyriuose, kurie vienija aukštosiose mokyklose studijuojančius korporacijos „Vytis“ ir Akademinės skaučių draugovės narius;</li>
+    <li>Suteiksite daugiau galimybių akademiniams skautams studijuoti ir populiarinti skautybę bei kelti profesinę kvalifikaciją, neformaliomis tarpdisciplininėmis studijomis konferencijose, seminaruose, stovyklose, skyrių sueigų paskaitose;</li>
+    <li>Padėsite įgyvendinti visų Lietuvoje veikiančių skautiškų organizacijų geranoriško ir glaudaus bendradarbiavimo siekį projektinės veiklos su JAV Lietuvių Skautų Sąjunga, Lietuvos Skautija, Lietuvos Skautų Sąjunga, Žemaitijos Skautų organizacija, Euroskautais ir kt. pagalba, organizuojant intelektualines, pramogines stovyklas, programas.</li>
+    <li>Prisidėsite suburiant suaugusius skautus: intelektualinėms, pramoginėms stovykloms, programoms organizuoti; veiklai patyrusių skautų amžiaus grupei (15-18 m.).</li>
+</ul>
+
+<h2>Dėkojame už Jūsų paramą, kuri Jums nieko nekainuoja! </h2>

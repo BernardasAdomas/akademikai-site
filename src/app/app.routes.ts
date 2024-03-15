@@ -6,6 +6,7 @@ import { FundComponent } from './fund/fund.component';
 import { SymbolListComponent } from './symbol-list/symbol-list.component';
 import { TitlePageComponent } from './title-page/title-page.component';
 import { NewsListComponent } from './news/news-list/news-list.component';
+import { DonationsComponent } from './donations/donations.component';
 
 export const routes: Routes = [
     { path: 'apie-mus', component: AboutUsComponent, pathMatch: 'full' },
@@ -17,6 +18,7 @@ export const routes: Routes = [
         path: 'naujienos',
         loadChildren: () => import('./news/news.routes').then(m => m.NEWS_ROUTES)
     },
+    { path: 'parama', component: DonationsComponent, pathMatch: 'full' },
     { path: '', component: TitlePageComponent, pathMatch: 'full' },
-    // { path: '**', redirectTo: '', pathMatch: 'full' }
+    { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
