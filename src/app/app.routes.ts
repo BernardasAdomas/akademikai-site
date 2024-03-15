@@ -12,6 +12,7 @@ import { LinksListComponent } from './links/links-list/links-list.component';
 import { AdMelioremComponent } from './ad-meliorem/ad-meliorem.component';
 import { OurVytisComponent } from './our-vytis/our-vytis.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { PlaceListComponent } from './places/place-list/place-list.component';
 
 export const routes: Routes = [
     { path: 'apie-mus', component: AboutUsComponent, pathMatch: 'full' },
@@ -29,6 +30,7 @@ export const routes: Routes = [
     { path: 'leidiniai/ad-meliorem', component: AdMelioremComponent, pathMatch: 'full'},
     { path: 'leidiniai/musu-vytis', component: OurVytisComponent, pathMatch: 'full'},
     { path: 'kontaktai', component: ContactsComponent, pathMatch: 'full'},
+    { path: 'skautiskos-vietos', component: PlaceListComponent, pathMatch: 'full'},
     { path: '', component: TitlePageComponent, pathMatch: 'full' },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
